@@ -1,5 +1,12 @@
 # Multi-MCP CloudOps Agent
 
+## Overview
+
+An agent that reaches Kubernetes, GCP, GitHub and Prometheus through MCP tools. `GET /tools` lists the available tools and `POST /call` invokes one, but destructive operations are refused unless the call carries `approved=true`. This puts a human approval step in front of cloud operations, and a pytest suite runs in GitHub Actions.
+
+- **Built with:** Python, MCP, pytest, GitHub Actions
+- **Scope:** Laptop lab with no hosted model; cluster apply stays false until a human approves.
+
 <!-- project-guide:start -->
 ## Project guide
 
